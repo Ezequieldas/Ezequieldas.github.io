@@ -5,13 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap" rel="stylesheet">
+    <title>Eze Das Portfolio</title>
   </head>
   <body>
     <header class="header">
@@ -51,7 +48,16 @@
       </section>
     </header>
     <section id="inicio" class="home"></section>
-    <h2>Inicio</h2>
+    <article class="hero-image" style="--hero-image:url('assets/world.jpg'); --attachment: fixed;">
+      <aside class="hero-image-opacity" style="--hero-opacity-color: var(--black-alpha-color);">
+        <div class="hero-image-content">
+          <h1 class="hero-image-title-1" style="--hero-text-color: var(--white-color);">Eze Das</h1>
+          <h2 class="hero-image-title-2" style="--hero-text-color: var(--white-color);">Frontend Developer</h2>
+          <a class="btn" href="#contacto">CONTÁCTAME!</a>
+        </div>
+      </aside>
+      
+    </article>
     <section id="acerca" class="about"></section>
     <h2>Acerca</h2>
     <section id="servicios" class="services"></section>
@@ -63,7 +69,11 @@
     <section id="contacto" class="contact"></section>
     <h2>Contacto</h2>
 
-    <footer>Made with love - by Ezequiel Das</footer>
+    <footer class="footer">
+      <small>
+      Made with love - by <a href="https://github.com/Ezequieldas" target="_blank">Ezequiel Das</a> 
+      </small>
+    </footer>
     <script src="./main.js"></script>
   </body>
 </html>
