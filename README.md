@@ -31,9 +31,4 @@ En tecnología competencias actuales son: HTML, CSS, Javascript; en librerías J
 
 Soy Ezequiel. Una persona disciplinada tanto en lo laboral como en lo académico, cuya mayor inversión está enfocada en el conocimiento, materializado en un crecimiento constante.
 
-
-<<<<<<< HEAD
-[VISITA MI PORTFOLIO](https://ezequieldas.github.io/)
-=======
 [VISITA MI PORTFOLIO](https://ezequieldas.github.io/Ezequieldas/)
->>>>>>> ab9851246c35f0fb516c0797638acde1fb4722e0
