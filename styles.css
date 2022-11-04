@@ -91,6 +91,25 @@ p {
 /* Components */
 
 /* Carousel */
+
+@keyframes carousel-slide {
+  0% {
+    transform: translateX(0%);
+  }
+
+  25% {
+    transform: translateX(-25%);
+  }
+
+  50% {
+    transform: translateX(-50%);
+  }
+
+  75% {
+    transform: translateX(-75%);
+  }
+}
+
 .carousel {
   margin: 2rem auto;
   padding: 2rem 0;
@@ -106,6 +125,7 @@ p {
   display: flex;
   list-style: none;
   transition: transform 0.5s ease-in-out;
+  animation: carousel-slide 12s ease-in-out 3s;
 }
 
 .carousel input {
@@ -138,7 +158,12 @@ p {
   transform: translateX(-75%);
 }
 
-
+#slide-1:checked ~ .slides-nav label#dot-1,
+#slide-2:checked ~ .slides-nav label#dot-2,
+#slide-3:checked ~ .slides-nav label#dot-3,
+#slide-4:checked ~ .slides-nav label#dot-4 {
+  background-color: var(--gray-dark-color);
+}
 
 @media screen and (max-width: 868px){
   .carousel {
@@ -397,6 +422,26 @@ progress::-webkit-progress-value {
 
 /* Site Styles */
 
+.contact-card {
+  margin: 1rem auto;
+  padding: 1rem;
+  width: 90%;
+  height: 144px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact-card > svg{
+  width: 2rem;
+  height:2rem;
+}
+
+.contact-card > small {
+  margin-top: -1rem;
+}
+
 .header {
   position: fixed;
   left: 0;
@@ -501,6 +546,16 @@ progress::-webkit-progress-value {
   margin-bottom: 1.25rem;
 }
 
+.social-media a{
+  padding: 0 .4rem;
+}
+
+.social-media svg {
+  width: 1.5rem;
+  height: 1.5rem;
+
+}
+
 @media screen and (max-width: 768px){
   .eze {
     display: flex;
@@ -510,6 +565,11 @@ progress::-webkit-progress-value {
 
 
 @media screen and (min-width: 768px){
+  .contact-cards {
+    display: grid;
+    grid-template-columns: repeat(2,48%);
+  }
+
   .services > .container {
     display: grid;
     grid-template-columns: repeat(2,45%);
@@ -538,6 +598,12 @@ progress::-webkit-progress-value {
 }
 
 @media screen and (min-width: 1024px){
+
+  .contact-cards {
+    display: grid;
+    grid-template-columns: repeat(4,24%);
+    justify-content: space-around;
+  }
   .header {
     position: sticky;
     top: 0;
