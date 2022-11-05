@@ -4,8 +4,6 @@
   --first-alpha-color: rgba(59,153,181,0.75);
   --second-color: #14192d;
   --second-alpha-color: rgba(20,25,45,0.75);
-  --third-color: #501464;
-  --third-alpha-color: rgba(80,20,100,0.75);
   --white-color: #fff;
   --gray-light-color: #f3f3f3;
   --gray-color: #ccc;
@@ -113,7 +111,6 @@ p {
 
 .contact-form input {
   border: 0;
-  padding-left: 0;
   border-bottom: thin solid var(--first-color);
 }
 
@@ -520,6 +517,18 @@ progress::-webkit-progress-value {
   display: inline
 }
 
+.footer {
+  margin-bottom: var(--header-height);
+  text-align: center;
+  padding: 0.5rem;
+  background-color: var(--first-color);
+}
+
+.footer a {
+  color: #000;
+  text-decoration: none;
+}
+
 .header {
   position: fixed;
   left: 0;
@@ -639,6 +648,7 @@ progress::-webkit-progress-value {
     display: flex;
     flex-direction: column;
   }
+
 }
 
 
@@ -681,6 +691,10 @@ progress::-webkit-progress-value {
     display: grid;
     grid-template-columns: repeat(4,24%);
     justify-content: space-around;
+  }
+
+  .footer {
+    margin-bottom: 0;
   }
   .header {
     position: sticky;
