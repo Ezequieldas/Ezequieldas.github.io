@@ -18,3 +18,38 @@
     $menu.classList.remove("is-active");
   });
 })(document);
+
+((d) => {
+  const $form = d.querySelector(".contact-form"),
+    $loader = d.querySelector(".contact-form-loader"),
+    $response = d.querySelector(".contact-form-response");
+
+  $form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    $loader.classList.remove("none");
+    fetch("https://formsubmit.co/ajax/ezequieldastolfo@gmail.com", {
+      method: "POST",
+      body: new FormData(e.target),
+    }).then((res) => (res.ok ? res.json() : Promise.reject(res)))
+      .then((json) => {
+            console.log(json);
+            location.hash = "#gracias";
+            $form.reset();
+          })
+      .catch((err) => {
+            console.log(err);
+            let message =
+              err.statusText ||
+              "Ocurrió un error al enviar. Vuelve a intentarlo!";
+            $response.querySelector(
+              "h3"
+            ).innerHTML = `${err.statusText}: ${message}`;
+          })
+      .finally(()=> {
+        $loader.classList.add("none");
+        setTimeout(() => {
+          location.hash = "#close"
+        }, 3000)
+      })
+  });
+})(document);
