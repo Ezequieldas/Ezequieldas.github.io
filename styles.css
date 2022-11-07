@@ -30,6 +30,7 @@ html {
 *::after,
 *::before {
   box-sizing: inherit;
+  overflow-x: hidden;
 }
 
 body {
@@ -286,6 +287,7 @@ p {
   border: 0;
   cursor: pointer;
   background-color: var(--second-color);
+  margin-right: 10px;
 }
 
 .menu-btn svg {
