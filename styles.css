@@ -179,7 +179,7 @@ p {
 .carousel {
   margin: 2rem auto;
   padding: 2rem 0;
-  max-width: 800px;
+  max-width: 900px;
   text-align: center;
   overflow-x: hidden;
   background-color: var(--carousel-bg-color);
@@ -188,10 +188,11 @@ p {
 .carousel .slides {
   padding-left: 0;
   width: 400%;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 4fr);
   list-style: none;
-  transition: transform 0.5s ease-in-out;
-  animation: carousel-slide 12s ease-in-out 3s;
+  transition: transform 1s ease-in-out;
+  animation: carousel-slide 12s ease-in-out 5s;
 }
 
 .carousel input {
@@ -231,11 +232,15 @@ p {
   background-color: var(--gray-dark-color);
 }
 
+.text-first {
+  padding-top: 20px;
+}
+
 @media screen and (max-width: 868px){
   .carousel {
     margin: 2rem auto;
     padding: 2rem 0;
-    max-width: 400px;
+    max-width: 500px;
     text-align: center;
     overflow-x: hidden;
     background-color: var(--carousel-bg-color);
@@ -395,13 +400,8 @@ p {
 
 /* Utilities */
 .avatar {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-}
-
-.text-first-color {
-  color: var(--first-color);
+  width: 390px;
+  height: 300px;
 }
 
 .box-shadow-1 {
@@ -496,6 +496,13 @@ progress::-webkit-progress-value {
 
 .none {
   display: none;
+}
+
+@media screen and (max-width: 768px){
+  .avatar {
+    width: 325px;
+    height: 250px;
+  }
 }
 
 /* Site Styles */
