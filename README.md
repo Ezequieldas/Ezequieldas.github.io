@@ -1,6 +1,6 @@
 
 ---
-<h2 style="text-align:center" >EZEQUIEL DASTOLFO - FRONTEND DEVELOPER</h2>
+<h2 style="text-align:center" >EZEQUIEL DASTOLFO - FULLSTACK DEVELOPER</h2>
 
 ---
 

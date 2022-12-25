@@ -1,6 +1,6 @@
 
 ---
-<h2 style="text-align:center" >EZEQUIEL DASTOLFO - FRONTEND DEVELOPER</h2>
+<h2 style="text-align:center" >EZEQUIEL DASTOLFO - FULLSTACK DEVELOPER</h2>
 
 ---
 <div style="width: 360px; margin: 0 auto">
@@ -60,7 +60,7 @@ What languages ​​do I speak?
 
 ---
 
-<div style="text-align: center; font-size: 20px"><a href="https://ezequieldas.github.io/" >VISITA MI PORTAFOLIO</a></div>
+<div style="text-align: center; font-size: 20px"><a href="https://ezequieldas.github.io/" >VISIT MY PORTFOLIO</a></div>
 
 ---
 
